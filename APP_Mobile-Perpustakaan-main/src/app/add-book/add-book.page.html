@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Tambah Buku
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Judul Buku</ion-label>
+      <ion-input [(ngModel)]="selectedBook.judul_buku" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Penulis</ion-label>
+      <ion-input [(ngModel)]="selectedBook.id_pengarang" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Tahun Terbit</ion-label>
+      <ion-input [(ngModel)]="selectedBook.tahun_terbit" type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" color="primary" (click)="addBook()">Tambah Buku</ion-button>
+</ion-content>

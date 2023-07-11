@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Peminjaman Buku
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!-- <ion-item>
+      <ion-label position="stacked">Nama Peminjam</ion-label>
+      <ion-input [(ngModel)]="borrowerName" type="text"></ion-input>
+    </ion-item> -->
+
+    <ion-item>
+      <ion-label position="stacked">Tanggal Pinjam</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="pinjam"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Tanggal Pengembalian</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="kembali"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Buku yang Dipinjam</ion-label>
+      <ion-select [(ngModel)]="id">
+        <ion-select-option *ngFor="let book of Buku" [value]="book.id">{{ book.jb }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" color="primary" (click)="borrowBooks()">Pinjam Buku</ion-button>
+</ion-content>

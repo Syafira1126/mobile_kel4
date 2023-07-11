@@ -1,0 +1,7 @@
+{
+  "name": "fitnest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

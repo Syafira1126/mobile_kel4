@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirmLogout()"><ion-icon name="log-out"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>
+      HOME
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ktk">
+    <button class="btn" routerLink="/book-list">Lihat Buku
+      <img src="../../assets/list-book.png" alt="" width="100px" height="100px" id="avatar-img" />
+    </button>
+  </div>
+  <div class="ktk">
+    <button class="btn" routerLink="/borrow-book">Pinjam Buku
+      <img src="../../assets/borrow-book.png" alt="" width="100px" height="100px" id="avatar-img" />
+    </button>
+  </div>
+</ion-content>

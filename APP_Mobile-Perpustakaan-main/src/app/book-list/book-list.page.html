@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Daftar Buku
+    </ion-title>~
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let book of Buku">
+    <div class="image">
+      <img alt="buku 1" src="{{ book.idp }}" />
+    </div>
+    <ion-card-header>
+      <ion-card-title>{{ book.jb }}</ion-card-title>
+      <ion-card-subtitle>{{ book.t_te }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ book.ss }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

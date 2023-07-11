@@ -1,0 +1,19 @@
+<ion-content>
+
+  <form #formLogin action="" class="login">
+    <div class="box--login">
+      <label name="username">Username </label>
+      <input #username type="text" id="username" class="input-trulala" placeholder="Masukan Username" required />
+      <label name="npm">Password </label>
+      <input #password type="password" id="password" class="input-trulala" placeholder="Masukan Password" required />
+    </div>
+    <div class="daftar">
+      <p>Belum punya akun?<button (click)="daftar()" class="btn-daftar">Daftar</button></p>
+    </div>
+    <div class="action--login">
+      <button class="button button-primary" (click)="login()">Login</button>
+      <P>Mengoding dengan &hearts; by <a href="https://www.instagram.com/m.ihsan_ag/">AG.</a></P>
+    </div>
+  </form>
+
+</ion-content>

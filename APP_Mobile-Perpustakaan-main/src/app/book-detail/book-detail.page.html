@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/books"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detail Buku</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ buku.judul_buku }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Penulis</ion-label>
+        <ion-note slot="end">{{ buku.id_penulis }}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Kategori</ion-label>
+        <ion-note slot="end">{{ buku.id_genre }}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Tahun Terbit</ion-label>
+        <ion-note slot="end">{{ buku.tahun_terbit }}</ion-note>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

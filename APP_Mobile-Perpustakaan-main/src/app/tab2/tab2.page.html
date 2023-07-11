@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Perpustakaan
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Judul Buku</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Penulis</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Kategori</ion-label>
+      <ion-select>
+        <ion-select-option value="fiksi">Fiksi</ion-select-option>
+        <ion-select-option value="nonfiksi">Nonfiksi</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Tahun Terbit</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" color="primary">Tambah Buku</ion-button>
+</ion-content>

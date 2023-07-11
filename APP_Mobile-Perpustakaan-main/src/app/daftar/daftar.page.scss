@@ -1,0 +1,19 @@
+* {
+    padding: 12px;
+    font-family: Arial;
+}
+
+.box {
+    margin-right: 5px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    height: 50px;
+}
+
+.btn:hover {
+    background-color: gray;
+}

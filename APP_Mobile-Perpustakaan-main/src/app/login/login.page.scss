@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+body {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    padding: 25px;
+    width: 100%;
+    margin-top: 30%;
+}
+
+.box--login {
+    background: #0905db;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 4px 3px 16px 0px #b7b7b740;
+    padding: 25px 13px;
+    justify-content: center;
+}
+
+.box--login label {
+    background: #0905db;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.input-trulala:focus {
+    background: #0905db;
+    border-bottom-color: white;
+    box-shadow: 0 0 10px white;
+    border-radius: 4px;
+}
+
+.box--login input {
+    background: #0905db;
+    border: 1px solid transparent;
+    outline: none;
+    margin: 0.8rem 0;
+    color: white;
+
+}
+
+// .box--login hr {
+//     border: 1px solid #f9f9f9;
+//     margin: 0.5rem 0;
+// }
+
+.action--login {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.button {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0.8rem 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #979797;
+}
+
+.button-primary {
+    background: #0905db;
+    color: white;
+}
+
+.button-secendry {
+    background-color: #e5e5e5;
+    color: #d02929;
+}
+
+.action--login p {
+    color: #0905db;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.action--login a {
+    color: #0905db;
+    font-size: 0.8rem;
+    font-weight: 200;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.daftar p {
+    text-align: center;
+    margin-top: 25px;
+    color: #0905db;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.daftar button {
+    background-color: white;
+    cursor: pointer;
+}
